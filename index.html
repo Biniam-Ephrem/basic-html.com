@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="indexc.css">
+    <meta name="author" content="Biniam Ephrem">
+    <meta name="description" content="HTML tutorial">
+    <meta name="keywords" content="HTML, css, JavaScript">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tutorial</title>
+</head>
+<body id="ibody">
+    <div class="header"><h1>
+        HTML tutorial
+    </h1></div>
+    <input type="button" style="background-color: #003; color: white;" value="black theme" id="ib">
+    <div class="flex-container">
+        <div>
+            <h2 style="color: rgb(81, 56, 238);">What is HTML?</h2>
+            <div>
+                <dfn title="Hyper Text Markup Language">HTML</dfn> is acronym which stands for <strong><i>
+                    Hyper Text Markup Language</i></strong>
+                     which is used for creating web pages and websites.
+                    let's see what is meant by Hypertext Markup Language and Web page.
+            </div>
+            <div class="hypertext">
+                <dfn><b>Hyper Text:</b></dfn>
+                 HyperText simply means "Text within Text." A text has a link within it. It is a hypertext.
+                 Whenever you click on a link which brings you to a new webpage, you have clicked  on a hypertext. HyperText is a way to link two or more webpages or HTML documents with each other.
+            </div>
+            <div class="markup-language">
+                <dfn><b>Markup language:</b></dfn>
+                 A markup language is a computer language that is used to apply layout and formatting conventions
+                  to a text document. Markup language makes text more interactive and dynamic. It can turn text into images, tables, links and more.
+            </div>
+            <div class="web-page">
+                <dfn><b>Web Page:</b></dfn>
+                 A web page is a document  which is commonly written in HTML and translated by a web browser. A web page can be identified by entering an URL.A Web page can be of the static or dynamic type. <b>With the help of HTML only, we can create static web pages.</b>
+                 <div style="margin-top: 20px;">
+                    Hence, HTML is a markup language which is used for creating attractive web pages with the help of styling, and  which looks in nice a format on a web browser. An HTML document is made of many HTML tags and each HTML tag contain defferent content.
+                    Let's see a simple example of HTML.
+                    <div class="imge" style="height: 450px; text-align: left; border-radius: 25px; white-space: pre; width: 400px; border: 3px slateblue solid;">
+                        < !DOCTYPE html> 
+                        < html>
+                        < head> 
+                            < title>document title< /title> 
+                        < /head>
+                        < body>
+                         < h1>I am heading one< /h1> </h1>
+                         < p>I am paragraph< /p>
+                        < /body> 
+                        < /html> 
+                    </div>
+                </div>
+                <div>
+                    <h2 style="margin-top: 20px; color: rgb(81, 56, 238);" margin-bottom: 20px;">Description of HTML Example</h2>
+                    <b>< !DOCTYPE>: </b>
+                    It defines the document type or it instruct the browser about the vesion of HTML(just it indicate we are using HTML5).
+                    <p><b>< html>: </b> This tag informs the browser that it is an HTML document. Text between html tad describes the web document> It is a container for all other elements of HTM except <! DOCTYPE>.</p>
+                    <p><b>< head>: </b> It should be the first element inside  the < html> element, which contains the meta data(information about the document). It must be closed before the body tag opens.</p>
+                    <p><b>< title>: </b> As its name saggested, it is used to add title of that html page which appears at the top of the browser window. It must be placed inside the head tag and should clos immediately.(optional)</p>
+                    <p><b>< body>: </b>Text between body tag describes the body content of the page that is visible to the end user. this tag contains the main content of the HTML document.</p>
+                    <p><b>< h1>: </b>Text between < h1>: tag describes the first level heading of the webpage.</p>
+                    <p><b>< p>: </b>Text between < p> tag describes the paragraph of the webpage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div style="background-color: rgb(81, 56, 238); height: 200px;">
+        <div>
+            <ul class="follow">
+                <li><a href="https://www.tiktok.com/@a_to_z_tube?is_from_webapp=1&sender_device=pc">Follow-us on Tiktok</a></li>
+                <li><a href="https://www.youtube.com/@a_to_z515">Subscribe-us on Youtube</a></li>
+                <li style="float: right; color: rgb(86, 206, 246); font-size: larger; font-weight: bold;">&copy; CopyRight aToz.com</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <script>
+        let nowColor;
+        document.getElementById('ib').onclick = function() {
+            nowColor = document.getElementById('ib').value;
+            if(nowColor == 'black theme') {
+                document.getElementById('ibody').style = "background-color: #003; color:white";
+                document.getElementById('ib').value = "white theme";
+                document.getElementById('ib').style = "background-color:white; color:black";
+            }
+            else {
+                document.getElementById('ibody').style = "background-color:white; color: black";
+                document.getElementById('ib').value = "black theme";
+                document.getElementById('ib').style = "background-color:#003; color:white";
+            }
+        }
+    </script>
+
+
+</body>
+</html>

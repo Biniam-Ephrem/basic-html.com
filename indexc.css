@@ -1,0 +1,49 @@
+
+.header {
+    background-color: rgb(248, 83, 116);
+    padding: 20px;
+    color: aliceblue;
+    text-align: center;
+}
+.flex-container {
+    min-height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-family: Ebrima;
+    font-size: large;
+}
+.flex-container div {
+    max-width: 500px;
+}
+.flex-container div div {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.follow {
+    padding: 50px;
+}
+.follow li {
+    padding: 15px;
+    list-style-type: none;
+
+}
+.follow li a:link {
+    color: white;
+}
+.follow li a:visited {
+    color: rgb(98, 209, 246);
+}
+.follow li a:hover {
+    color: aliceblue;
+    background-color: rgb(242, 83, 197);
+}
+.follow li a:active {
+    color: crimson;
+}
+.follow li a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
